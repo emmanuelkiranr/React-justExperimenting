@@ -1,13 +1,114 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: grey;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.button {
+  align-items: flex-end;
+  background-color: aquamarine;
+  box-shadow: 0px 4px 4px #0000001a;
+  display: flex;
+  height: 25px;
+  margin-top: 9px;
+  mix-blend-mode: normal;
+  padding: 0 36px;
+  width: 200px;
+}
+.button-text {
+  color: white;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  font-weight: 700;
+  letter-spacing: 0;
+  min-height: 20px;
+  min-width: 127px;
+  mix-blend-mode: normal;
+  text-align: center;
+  width: 127px;
+}
+.close {
+  color: aquamarine;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-left: 2px;
+  margin-top: 9px;
+  min-height: 25px;
+  min-width: 102px;
+  mix-blend-mode: normal;
+  text-align: center;
+  width: 102px;
+}
+.ellipse-1 {
+  height: 158px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  width: 158px;
+}
+/* .layout {
+  align-items: flex-start;
+  background-color: #b6b6b6;
+  display: flex;
+  height: 896px;
+  mix-blend-mode: normal;
+  padding: 0 57px;
+  width: 414px;
+} */
+.text-1 {
+  align-self: flex-end;
+  color: #afafaf;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-top: 1px;
+  min-height: 90px;
+  min-width: 201px;
+  mix-blend-mode: normal;
+  width: 201px;
+}
+.view {
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  margin-top: 81px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  padding: 8px 49px;
+  width: 300px;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+* {
+  box-sizing: border-box;
+}
+.container-center-horizontal {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.container-center-horizontal > * {
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+.screen a {
+  text-decoration: none;
+  display: contents;
 }
